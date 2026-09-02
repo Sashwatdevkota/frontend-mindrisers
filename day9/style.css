@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  background-color: darkblue;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+/* MAIN CSS */
+
+.container {
+  display: flex;
+}
+
+.left {
+  width: 20%;
+  height: calc(100vh - 70px);
+  background-color: aqua;
+  position: sticky;
+  top: 70px;
+}
+
+.center {
+  width: 60%;
+
+  background-color: purple;
+}
+
+.right {
+  width: 20%;
+  height: calc(100vh - 70px);
+  background-color: red;
+    position: sticky;
+  top: 70px;
+}
