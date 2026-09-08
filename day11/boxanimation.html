@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-container {
+    position: relative;
+    width: 300px;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+}
+
+.image-container .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.image-container:hover .hover {
+    opacity: 1;
+}
+    </style>
+</head>
+<body>
+    <div class="image-container">
+    <img src="image1.jpg" class="normal">
+    <img src="image2.jpg" class="hover">
+</div>
+</body>
+</html>
