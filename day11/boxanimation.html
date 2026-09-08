@@ -1,36 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Box Animation</title>
     <style>
-        .image-container {
-    position: relative;
-    width: 300px;
-}
+        .container {
+            border: 1px solid black;
+            height: 600px;
+            width: 600px;
+        }
 
-.image-container img {
-    width: 100%;
-    display: block;
-}
+        .box {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: lightblue;
+            border-radius: 10%;
+            animation: moveBox 4s ease-in-out infinite;
+        }
 
-.image-container .hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-}
-
-.image-container:hover .hover {
-    opacity: 1;
-}
+        @keyframes moveBox {
+            0% {
+                margin: 0px;
+                background-color: #ffffff; 
+            }
+            25% {
+                margin-left: 400px;
+                margin-top: 0px;
+                background-color: #ffb3b3;
+            }
+            50% {
+                margin-left: 400px;
+                margin-top: 400px;
+                background-color: #ff6666;
+            }
+            75% {
+                margin-left: 0px;
+                margin-top: 400px;
+                background-color: #ff3333;
+            }
+            100% {
+                margin-left: 0px;
+                margin-top: 0px;
+                background-color: #ff0000;
+            }
+        }
     </style>
 </head>
+
 <body>
-    <div class="image-container">
-    <img src="image1.jpg" class="normal">
-    <img src="image2.jpg" class="hover">
-</div>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
 </body>
+
 </html>
