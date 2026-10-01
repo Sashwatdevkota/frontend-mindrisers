@@ -18,4 +18,4 @@
     
     
 people={"name": "Alice", "age": 25, "contact": "alice@example.com"},
-print (people[name])
+print (people['name'])
