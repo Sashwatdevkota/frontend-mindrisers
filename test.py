@@ -20,3 +20,11 @@
 # people={"name": "Alice", "age": 25, "contact": "alice@example.com"},
 # print (people['name'])
 
+x=("1","2", "3","4", "5","6", "7", "8", "9", "10")
+greater=8
+for i in x:
+    num=int(i)
+    print("current num is",i)
+    if num>greater:
+        print("this is greater")
+    
