@@ -42,12 +42,14 @@
 #     # Executes regardless of whether an exception occurred or not
 #     print("Execution completed.")
     
-name=None   
+# name=None   
 
-def print_details(**info):
-    for key, value in info.items():
-        print(f"{key}: {value}")
+# def print_details(**info):
+#     for key, value in info.items():
+#         print(f"{key}: {value}")
 
-print_details(Name="Alice", Age=25, Role="Developer")
+# print_details(Name="Alice", Age=25, Role="Developer")
 
-my_dict = {"name": "Alice", "age": 25, "city": "New York"}
+# my_dict = {"name": "Alice", "age": 25, "city": "New York"}
+
+
