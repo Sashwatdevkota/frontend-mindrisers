@@ -17,5 +17,6 @@
 #     print("nope")
     
     
-people={"name": "Alice", "age": 25, "contact": "alice@example.com"},
-print (people['name'])
+# people={"name": "Alice", "age": 25, "contact": "alice@example.com"},
+# print (people['name'])
+
